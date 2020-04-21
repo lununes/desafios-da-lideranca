@@ -1,0 +1,197 @@
+/* cores:
+
+-- Text
+text-light-extra: #EBFAF6
+text-light: #3BC4A7
+text-regular: #009172
+text-dark: #005E4A
+text-dark-extra: #002B22
+
+-- Green
+green-light-extra: #edf7f5
+green-light: #3BC4A7
+green-regular: #009172
+green-dark: #005E4A
+green-dark-extra: #002B22
+
+-- Blue
+blue-light-extra: #E5F1FF
+blue-light: #46AAE8
+blue-regular: #006FB5
+blue-dark: #005082
+blue-dark-extra: #002F4D
+
+-- Purple
+purple-light-extra: #F6EDF7
+purple-light: #CB74E8
+purple-regular: #A036B5
+purple-dark: #732782
+purple-dark-extra: #46184F
+
+*/
+
+
+
+
+
+/* Background */
+
+#slider.gradient-bg {
+    background-image: url(images/lowpoly.png);
+}
+
+#slider .heading-block h3 {
+    text-transform: none;
+}
+
+.heading-block:after {
+    content: '';
+    display: block;
+    margin-top: 30px;
+    width: 40px;
+    border-top: 2px solid var(--main-color);
+}
+
+/* Card Cursos */
+
+section .card-curso {
+    padding: 0.25rem;
+    border: none;
+    border-radius: 0.5rem;
+    height: 100%;
+    display: block;
+}
+
+section .card {
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+    height: 100%;
+}
+
+section .card-curso .card-header {
+    min-height: 220px;
+}
+
+section .card-curso .card-body {
+    padding: 1.5rem;
+}
+section .card-curso .card-body ol {
+    list-style-position: inside;
+    list-style: none;
+    counter-reset: my-awesome-counter;
+}
+
+/* Curso 1 */
+section .card-curso .card-body li {
+    margin-bottom: 0.5rem;
+    counter-increment: my-awesome-counter;
+}
+
+section .card-curso.curso-1 {
+    background: linear-gradient(90deg,var(--green-light) 4%, var(--green-regular) 0%) top/100% 34% no-repeat,linear-gradient(90deg,var(--green-regular) 50%,var(--green-dark) 0%) top/100% 82% no-repeat,linear-gradient(90deg,var(--green-light) 10%,var(--green-regular) 0%) top/100% 100%;
+}
+section .curso-1 h4 {
+    color: var(--green-light);
+}
+section .curso-1 h3 {
+    color: var(--green-regular);
+}
+section .curso-1 .card-header,
+section .curso-1 .card-footer {
+    background-color: var(--green-light-extra);
+    border-color: var(--green-light);
+}
+section .curso-1 .card-body li::before {
+    content: counter(my-awesome-counter) ". ";
+    color: var(--green-dark-extra);
+    font-weight: bold;
+}
+section .curso-1 .card-footer a {
+      background-color: var(--green-regular);
+}
+
+/* Curso 2 */
+section .card-curso .card-body li {
+    margin-bottom: 0.5rem;
+    counter-increment: my-awesome-counter;
+}
+
+section .card-curso.curso-2 {
+    background: linear-gradient(90deg,var(--text-light) 4%, var(--text-regular) 0%) top/100% 34% no-repeat,linear-gradient(90deg,var(--text-regular) 50%,var(--text-dark) 0%) top/100% 82% no-repeat,linear-gradient(90deg,var(--text-light) 10%,var(--text-regular) 0%) top/100% 100%;
+}
+section .curso-2 h4 {
+    color: var(--text-light);
+}
+section .curso-2 h3 {
+    color: var(--text-regular);
+}
+section .curso-2 .card-header,
+section .curso-2 .card-footer {
+    background-color: var(--text-light-extra);
+    border-color: var(--text-light);
+}
+section .curso-2 .card-body li::before {
+    content: counter(my-awesome-counter) ". ";
+    color: var(--text-dark-extra);
+    font-weight: bold;
+}
+section .curso-2 .card-footer a {
+      background-color: var(--text-regular);
+}
+
+/* Curso 3 */
+section .card-curso .card-body li {
+    margin-bottom: 0.5rem;
+    counter-increment: my-awesome-counter;
+}
+
+section .card-curso.curso-3 {
+    background: linear-gradient(90deg,var(--text-light) 4%, var(--text-regular) 0%) top/100% 34% no-repeat,linear-gradient(90deg,var(--text-regular) 50%,var(--text-dark) 0%) top/100% 82% no-repeat,linear-gradient(90deg,var(--text-light) 10%,var(--text-regular) 0%) top/100% 100%;
+}
+section .curso-3 h4 {
+    color: var(--text-light);
+}
+section .curso-3 h3 {
+    color: var(--text-regular);
+}
+section .curso-3 .card-header,
+section .curso-3 .card-footer {
+    background-color: var(--text-light-extra);
+    border-color: var(--text-light);
+}
+section .curso-3 .card-body li::before {
+    content: counter(my-awesome-counter) ". ";
+    color: var(--text-dark-extra);
+    font-weight: bold;
+}
+section .curso-3 .card-footer a {
+      background-color: var(--text-regular);
+}
+
+/* Divider */
+
+.divider.divider-rounded i, .divider.divider-border i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+
+.divider {
+    position: relative;
+    overflow: hidden;
+    margin: 35px 0;
+    color: var(--main-color);
+    width: 100%;
+}
+
+.divider:after, .divider.divider-center:before, .divider.divider-center.divider-short:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 8px;
+    left: 30px;
+    height: 0;
+    border-top: 1px solid var(--main-color);
+}
