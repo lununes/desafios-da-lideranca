@@ -1,0 +1,39 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+
+
+:root {
+
+	/* Text */
+	--text-light-extra: #EBFAF6;
+	--text-light: #3BC4A7;
+	--text-regular: #009172;
+	--text-dark: #005E4A;
+	--text-dark-extra: #002B22;
+	
+	/* Green */
+	--green-light-extra: #edf7f5;
+	--green-light: #3BC4A7;
+	--green-regular: #009172;
+	--green-dark: #005E4A;
+	--green-dark-extra: #002B22;
+	
+	/* Blue */
+	--blue-light-extra: #E5F1FF;
+	--blue-light: #46AAE8;
+	--blue-regular: #006FB5;
+	--blue-dark: #005082;
+	--blue-dark-extra: #002F4D;
+	
+	/* Purple */
+	--purple-light-extra: #F6EDF7;
+	--purple-light: #CB74E8;
+	--purple-regular: #A036B5;
+	--purple-dark: #732782;
+	--purple-dark-extra: #46184F;
+	}
