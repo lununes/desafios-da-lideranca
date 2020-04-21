@@ -1,0 +1,594 @@
+/* Curso 1 - CSS */
+
+a {
+    color: var(--green-regular);
+    font-weight: 600;
+}
+
+.curso-color {color: var(--green-dark) !important;}
+
+a:hover {color: var(--green-dark);}
+
+/* Heading */
+
+.heading-block h1, .heading-block h2, .heading-block h3, .heading-block h4, .emphasis-title h1, .emphasis-title h2 {
+    margin-bottom: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--green-dark);
+}
+
+.heading-block:after {
+    content: '';
+    display: block;
+    margin-top: 30px;
+    width: 40px;
+    border-top: 2px solid var(--green-regular);
+}
+
+.fancy-title.title-bottom-border h1, .fancy-title.title-bottom-border h2, .fancy-title.title-bottom-border h3, .fancy-title.title-bottom-border h4, .fancy-title.title-bottom-border h5, .fancy-title.title-bottom-border h6 {
+    display: block;
+    background: transparent;
+    padding: 0 0 10px;
+    border-bottom: 2px solid var(--green-regular);
+}
+
+h1 > span:not(.nocolor):not(.badge), h2 > span:not(.nocolor):not(.badge), h3 > span:not(.nocolor):not(.badge), h4 > span:not(.nocolor):not(.badge), h5 > span:not(.nocolor):not(.badge), h6 > span:not(.nocolor):not(.badge) {
+    color: var(--green-regular);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #ffffff;
+    content: "/";
+}
+
+/* Section background colors */
+
+.section {
+    background-color: var(--green-light-extra);
+}
+
+.bgcolor-green {background-color: var(--green-regular) !important;}
+
+/* Divider */
+
+.divider.divider-center {
+    color: var(--green-light);
+}
+
+.divider:after, .divider.divider-center:before, .divider.divider-center.divider-short:before {
+    border-top: 1px solid var(--green-light);;
+}
+
+/* Quotes */
+
+.quote {
+    border-bottom: 2px solid var(--green-light) !important;
+    border-left: 2px solid var(--green-light) !important;
+    border-radius: 0 0 0 8px;
+    padding: 20px;
+    position: relative;
+}
+
+.quote p {
+    position: relative;
+    color: var(--green-dark-extra);
+}
+
+.quote:before {
+    font-family: 'font-icons';
+    speak-as: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    content: "\e7ad";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 42px;
+    top: -20px;
+    left: -10px;
+    color: var(--green-regular);
+}
+
+/* Tabs */
+
+.tabs.tabs-bb ul.tab-nav li.ui-tabs-active a {
+    border-bottom: 2px solid var(--green-regular);
+    top: -2px;
+    height: 44px;
+    line-height: 44px;
+}
+
+.acc_content {
+    position: relative;
+    padding: 0 0 15px 0px;
+}
+
+/* Para refletir */
+
+.feature-box.fbox-effect.reflect-box.curso1 {
+    border: 2px dotted var(--green-regular);
+    border-radius: 6px;
+    padding: 20px 20px 20px 100px;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 0px var(--green-light);
+}
+
+.reflect-box.curso1 .fbox-icon {
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 20px;
+    left: 20px;
+}
+
+.fbox-effect:hover .fbox-icon i {
+    background-color: var(--green-dark);
+    color: #FFF;
+}
+
+@media (max-width: 576px) {
+    .reflect-box.curso1 .fbox-icon {
+        top: -30px;
+        left: calc(50% - 32px);
+    }
+    .feature-box.fbox-effect.reflect-box.curso1 {
+        padding: 60px 20px 20px 20px;
+    }
+}
+
+.reflect-box.curso1 h3 {color: var(--green-dark);}
+
+.reflect-box.curso1 p {color: var(--text-regular);}
+    
+.feature-box .fbox-icon i, .feature-box .fbox-icon img {
+    border-radius: 50%;
+    background-color: var(--green-regular);
+}
+
+/* Accordion */
+
+.accordion.accordion-bg .acctitle, .accordion.accordion-bg .acctitlec {
+    background-color: var(--green-regular);
+    color: #ffffff;
+    line-height: 44px;
+    padding: 0 0 0 36px;
+    margin-bottom: 5px;
+    border-top: 0;
+}
+.accordion .acc_content .acc-quote {
+    background-color: var(--green-light-extra);
+    display: inline-block;
+}
+
+/* Toggle */
+
+.toggle.toggle-bg .togglet, .toggle.toggle-bg .toggleta {
+    background-color: var(--green-regular);
+    color: #ffffff;
+    line-height: 44px;
+    padding: 0 0 0 36px;
+    margin-bottom: 5px;
+    border-top: 0;
+}
+.accordion .acc_content .acc-quote {
+    background-color: var(--green-light-extra);
+    display: inline-block;
+}
+
+/* Tabela de competências */
+
+section .table-competências h4 {
+    background-color: var(--green-light);
+    padding: 5px 10px;
+    color: #ffffff;
+    margin: 0;
+}
+section .table-competências ul {
+    background-color:var(--green-light-extra);
+    padding: 20px;
+}
+section .table-competências li {
+    list-style-position: outside;
+    margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+    .accordion.accordion-bg .acc_content {
+        padding: 10px 0 15px 0;
+    }
+}
+
+/* Resumo da aula */
+section .resumo-aula {
+    background-color: #ffffff;
+    color: var(--text-regular);
+    border-top: 3px solid var(--green-light);
+    border-bottom: 3px solid var(--green-dark);
+    border-radius: 4px;
+    padding: 30px;
+    text-align: left;
+}
+
+section .resumo-aula h4 {color: var(--green-dark);}
+section .resumo-aula h5 {color: var(--text-dark);}
+
+/* Button */
+
+.button.button-border {
+    border: 2px solid var(--green-regular);
+    background-color: transparent;
+    color: var(--green-regular);
+    line-height: 36px;
+    font-weight: 700;
+    text-shadow: none;
+}
+
+.dark .button.button-border:not(.button-light) {
+    border-color: var(--green-regular);
+    color: var(--green-regular);
+}
+.button.button-border.button-fill:before {
+    content: '';
+    position: absolute;
+    background-color:var(--green-regular);
+}
+
+/* Nav Button : Aulas */
+section .nav-aulas .button.button-reveal i {
+    background-color: var(--green-light);
+}
+
+ /* Modal */
+
+ .modal-header {
+    background-color: var(--green-light-extra);
+    border-bottom: 1px solid var(--green-light);
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+.modal-title {
+    color: var(--green-dark);
+}
+.modal-body h4 {color: var(--green-dark);}
+.modal-body a {color: var(--green-regular);}
+.modal-body a:hover {color: var(--green-dark);}
+
+.modal-body li {
+    list-style-position: inside;
+}
+
+/* Item list box */
+
+.list-box {
+    /* border-left: 3px solid var(--green-regular); */
+    padding: 10px;
+    background-color: var(--text-light-extra);
+    border-radius: 2px;
+    margin: 0 10px 20px;
+    box-shadow: 2px 2px 0px var(--green-light);
+}
+
+.list-box i {
+    box-shadow: none;
+    margin: 0 0px 0 10px;
+}
+
+.list-box:hover i {
+    background-color: var(--green-regular);
+    color: #FFF;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    box-shadow: 0 0 0 rgba(0,0,0,0.2);
+    transform: translateX(-15px);
+}
+
+.list-box h5 {
+    margin: 0;
+}
+
+/* Order Item list box */
+
+.list-box.order-list {
+    padding: 5px 10px;
+    margin: 0 10px 10px;
+}
+
+.list-box.order-list .i-rounded, .i-circled, .i-bordered {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    font-size: 20px;
+    color: var(--green-dark);
+}
+
+.list-box.order-list i span {
+    font-family: 'Lato', sans-serif;
+}
+
+.list-box.order-list:hover i {
+    background-color: var(--green-regular);
+    color: #FFF;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    box-shadow: 0 0 0 rgba(0,0,0,0.2);
+    transform: translateX(-15px);
+}
+
+/* Flip Card */
+
+.flip-card .flip-card-front:after, .flip-card-back:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+    opacity: 0.6;
+    background: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 6px;
+}
+
+.flip-card .flip-card-back {
+    background-color: var(--text-dark-extra);
+}
+
+.flip-card .flip-card-body {
+    background: transparent;
+}
+
+/* Accordion Color */
+
+.accordion-colors .acctitle i {
+    margin: 0 10px;
+}
+.accordion-colors .acctitle {
+    padding: 10px 20px 10px 30px;
+    background-color: #fff;
+    
+}
+
+.accordion-colors .acc_content {
+    position: relative;
+    padding: 5px 30px 10px;
+    background-color: #fff;
+}
+
+.accordion-colors .acc-item {margin-bottom: 20px;}
+
+.accordion-colors .acc-item:last-child {margin-bottom: 0;}
+
+/* SVG IMG11 */
+
+#img11 {
+    width: 100%;
+    height: auto;
+}
+
+.cls-1{fill:#27a3e0;}
+.cls-2{fill:#e84b92;}
+.cls-3{fill:#f9bb41;}
+.cls-4{opacity:0.9;font-size:28px;fill:#fff;font-family:Lato-Bold, Lato;font-weight:700;}
+.cls-5{letter-spacing:-0.02em;}
+.cls-6{letter-spacing:0em;}
+.cls-7{letter-spacing:-0.02em;}
+.cls-8{letter-spacing:-0.03em;}
+.cls-9{letter-spacing:-0.01em;}
+.cls-10{letter-spacing:-0.03em;}
+
+/* Referencia Box */
+
+.referencia-box {
+    border: 2px solid var(--green-regular);
+    border-radius: 4px;
+    padding: 20px;
+}
+.referencia-box p {
+    margin: 0;
+}
+
+/* Blocos de divisões dentro da Aula */
+
+.bloco-title-list h3 {
+    border-left: 3px solid var(--green-regular);
+    padding-left: 10px;
+}
+.bloco-title-list h3:last-child {margin: 0;}
+
+/* Promo Boxes */
+
+.promo.promo-flat {
+    background-color: var(--green-regular);
+}
+.promo.promo-dark {
+    border: 0 !important;
+    padding: 30px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+.promo.promo-dark span {
+    margin-top: 8px;
+}
+
+.promo.promo-dark h3 span {
+    color: #ffffff;
+}
+
+.promo.promo-dark h4 {
+    color: #FFF;
+    margin: 0;
+}
+
+/* Feature Box */
+
+.curso1 .feature-box.fbox-center:not(.fbox-bg) h3:after {
+    content: '';
+    display: none;
+}
+
+/* Card */
+.card {
+    border: 3px solid var(--green-regular);
+    border-radius: 6px;
+}
+.card .card-header {
+    background-color: var(--green-regular);
+    padding: 20px;
+}
+.card .card-header h1,
+.card .card-header h2,
+.card .card-header h3,
+.card .card-header h4,
+.card .card-header h5,
+.card .card-header h6 {
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+.card .card-body {
+    background-color: var(--green-light-extra);
+    padding: 20px;
+    border-radius: 6px;
+}
+.card .card-body p {
+    color: var(--green-dark-extra);
+    margin-bottom: 10px;
+}
+.card .card-body p:last-child {
+    margin: 0;
+}
+
+/* Bordered Featured Boxes */
+.feature-box-number .feature-box.fbox-bg.fbox-center {
+    margin-top: 68px;
+    padding: 68px 0 0;
+    background-color: var(--green-regular);
+    border: 2px solid var(--green-regular);
+    border-radius: 5px;
+}
+.feature-box-number .feature-box.fbox-border .fbox-icon {
+    border: 2px solid var(--green-dark-extra);
+    border-radius: 50%;
+}
+.feature-box-number .feature-box.fbox-border .fbox-icon i, .feature-box.fbox-border .fbox-icon img {
+    border: none;
+    background-color: transparent !important;
+    color: var(--text-dark);
+}
+.feature-box-number .fbox-border.fbox-effect:hover .fbox-icon i {
+    color: #FFF;
+    box-shadow: 0 0 0 1px #333;
+}
+.feature-box-number .feature-box .feature-box-header {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid var(--green-light);
+}
+.feature-box-number .feature-box .feature-box-header h3 {
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+.feature-box-number .feature-box .feature-box-body {
+    background-color: #ffffff;
+    padding: 20px;
+}
+.feature-box-number .feature-box .feature-box-body p {
+    margin: 0 0 10px;
+    text-align: left;
+    color: var(--text-regular);
+}
+.feature-box-number .feature-box hr {
+    background-color: #ffffff;
+    padding: 0 20px;
+    margin: 0;
+}
+.feature-box-number .feature-box .feature-box-footer {
+    background-color: #ffffff;
+    padding: 20px;
+}
+.feature-box-number .feature-box .feature-box-footer p {
+    margin: 0 0 10px;
+    text-align: left;
+    color: var(--text-regular);
+}
+
+/* Carousel Text */
+
+.carousel-text .carousel-item {
+    padding: 20px;
+}
+.carousel-text .carousel-item .item-inner {
+    /* background-color: var(--green-light-extra);
+    border: 1px solid var(--green-light); */
+    border-radius: 6px;
+    /* padding: 20px; */
+    min-height: 250px;
+}
+
+.carousel-text .carousel-item h3,
+.carousel-text .carousel-item h4 {
+    color: var(--green-regular);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    margin: 0 0 10px;
+    text-align: center;
+}
+.carousel-text .carousel-item p {
+    color: var(--green-dark);
+    text-align: center;
+    margin: 0;
+}
+
+.carousel-text .carousel-indicators li {
+    background-color: var(--green-regular);
+}
+
+.carousel-text .carousel-indicators {
+    margin-bottom: 10px;
+}
+.carousel-text .carousel-control-prev i,
+.carousel-text .carousel-control-next i {
+    color: var(--green-dark);
+    font-size: 30px;
+}
+
+.carousel-text .carousel-control-prev,
+.carousel-text .carousel-control-next {
+    margin-bottom: 20px;
+    top: auto;
+}
+
+/* Table Responsive Motivação / Conteudo */
+
+.motivacao-conteudo .table th {
+    background-color: var(--text-light-extra);
+}
+
+.motivacao-conteudo .table th,
+.motivacao-conteudo .table td {
+    vertical-align: middle;
+}
+.motivacao-conteudo .table .red {
+    color: #732782;
+}
+.motivacao-conteudo .table th.red {
+    background-color: #F6EDF7;
+    color: #732782;
+}
+.motivacao-conteudo .table .blue {
+    color: #005082;
+}
+.motivacao-conteudo .table th.blue {
+    background-color: #E5F1FF;
+    color: #005082;
+}
