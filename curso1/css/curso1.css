@@ -221,6 +221,8 @@ section .resumo-aula h5 {color: var(--text-dark);}
 
 /* Button */
 
+.button-simple {background-color: var(--green-regular);color: #ffffff;}
+.button-simple:hover {background-color: var(--green-dark);color: #ffffff;}
 .button.button-border {
     border: 2px solid var(--green-regular);
     background-color: transparent;
@@ -243,6 +245,12 @@ section .resumo-aula h5 {color: var(--text-dark);}
 /* Nav Button : Aulas */
 section .nav-aulas .button.button-reveal i {
     background-color: var(--green-light);
+}
+
+body:not(.device-touch) .button {
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
  /* Modal */
@@ -391,7 +399,10 @@ section .nav-aulas .button.button-reveal i {
     border-radius: 4px;
     padding: 20px;
 }
-.referencia-box p {
+.referencia-box p:last-child,
+.referencia-box h4:last-child,
+.referencia-box h5:last-child,
+.referencia-box h6:last-child {
     margin: 0;
 }
 
@@ -443,6 +454,7 @@ section .nav-aulas .button.button-reveal i {
 .card .card-header {
     background-color: var(--green-regular);
     padding: 20px;
+    border-radius: 0;
 }
 .card .card-header h1,
 .card .card-header h2,
@@ -460,11 +472,19 @@ section .nav-aulas .button.button-reveal i {
     padding: 20px;
     border-radius: 6px;
 }
-.card .card-body p {
+.card .card-footer {
+    background-color: var(--green-light-extra);
+    padding: 20px;
+    border-radius: 0;
+    border-top: 1px solid var(--green-regular);
+}
+.card .card-body p,
+.card .card-footer p {
     color: var(--green-dark-extra);
     margin-bottom: 10px;
 }
-.card .card-body p:last-child {
+.card .card-body p:last-child,
+.card .card-footer p:last-child {
     margin: 0;
 }
 
@@ -591,4 +611,49 @@ section .nav-aulas .button.button-reveal i {
 .motivacao-conteudo .table th.blue {
     background-color: #E5F1FF;
     color: #005082;
+}
+
+/* Imagem aula 10 - bullets */
+
+.float-item {
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: var(--green-light-extra);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    line-height: 1.5;
+    z-index: 10;
+}
+.float-item:hover {
+    background-color: var(--main-color);
+    color: #ffffff;
+}
+
+.float-item.item1 {
+    top: 22%;
+    left: 29%;
+}
+.float-item.item2 {
+    top: 22%;
+    right: 29%;
+}
+.float-item.item3 {
+    top: 58.5%;
+    left: calc(50% - 15px);
+}
+.float-item.item4 {
+    bottom: -4%;
+    left: 13%;
+}
+.float-item.item5 {
+    bottom: -4%;
+    left: calc(50% - 15px);
+}
+.float-item.item6 {
+    bottom: -4%;
+    right: 13%;
 }
