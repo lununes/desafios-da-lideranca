@@ -108,6 +108,7 @@ body.stretched #header.full-header .container {
 #logo img {
 	display: block;
 	max-width: 100%;
+	padding: 15px;
 }
 
 #logo a.standard-logo { display: block; }
@@ -239,7 +240,7 @@ body.stretched #header.full-header .container {
 }
 
 #primary-menu ul li:hover > a,
-#primary-menu ul li.current > a { color: #1ABC9C; }
+#primary-menu ul li.current > a { color: var(--main-color); }
 
 #primary-menu > ul > li.sub-menu > a > div { }
 

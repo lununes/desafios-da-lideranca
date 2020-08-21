@@ -141,6 +141,10 @@
 body,
 .dropdown-menu { font-size: 1rem; }
 
+html, body {
+	scroll-behavior: smooth;
+}
+
 
 /* ----------------------------------------------------------------
 	Basic
