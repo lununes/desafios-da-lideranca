@@ -1,0 +1,741 @@
+/* Curso 1 - CSS */
+
+a {
+    color: var(--blue-regular);
+    font-weight: 600;
+}
+
+.curso-color {color: var(--blue-dark) !important;}
+
+a:hover {color: var(--blue-dark);}
+
+.bgcolor{background-color: var(--blue-light-extra) !important;}
+
+/* Order and Unorder list */
+
+ul, ol {list-style-position:inside;}
+
+/* Mega Menu */
+
+#primary-menu .mega-menu .curso2 .aula-nome span {
+    color: var(--blue-regular);
+}
+
+/* #primary-menu ul ul.curso2 li:hover > a {
+    color: var(--blue-regular);
+} */
+
+#primary-menu ul li .mega-menu-content.style-2 ul.curso2 li > a:hover .aula-nome span {
+    background-color: var(--blue-regular);
+}
+
+/* Heading */
+
+.heading-block h1, .heading-block h2, .heading-block h3, .heading-block h4, .emphasis-title h1, .emphasis-title h2 {
+    margin-bottom: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--blue-dark);
+}
+
+.heading-block:after {
+    content: '';
+    display: block;
+    margin-top: 30px;
+    width: 40px;
+    border-top: 2px solid var(--blue-regular);
+}
+
+.fancy-title.title-bottom-border h1, .fancy-title.title-bottom-border h2, .fancy-title.title-bottom-border h3, .fancy-title.title-bottom-border h4, .fancy-title.title-bottom-border h5, .fancy-title.title-bottom-border h6 {
+    display: block;
+    background: transparent;
+    padding: 0 0 10px;
+    border-bottom: 2px solid var(--blue-regular);
+}
+
+h1 > span:not(.nocolor):not(.badge), h2 > span:not(.nocolor):not(.badge), h3 > span:not(.nocolor):not(.badge), h4 > span:not(.nocolor):not(.badge), h5 > span:not(.nocolor):not(.badge), h6 > span:not(.nocolor):not(.badge) {
+    color: var(--blue-regular);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #ffffff;
+    content: "/";
+}
+
+/* Section background colors */
+
+.section {
+    background-color: var(--blue-light-extra);
+}
+
+.bgcolor-blue {background-color: var(--blue-regular) !important;}
+
+/* Divider */
+
+.divider.divider-center {
+    color: var(--blue-light);
+}
+
+.divider:after, .divider.divider-center:before, .divider.divider-center.divider-short:before {
+    border-top: 1px solid var(--blue-light);;
+}
+
+/* Quotes */
+
+.quote {
+    border-bottom: 2px solid var(--blue-light) !important;
+    border-left: 2px solid var(--blue-light) !important;
+    border-radius: 0 0 0 8px;
+    padding: 20px;
+    position: relative;
+}
+
+.quote p {
+    position: relative;
+    color: var(--blue-dark-extra);
+}
+
+.quote:before {
+    font-family: 'font-icons';
+    speak-as: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    content: "\e7ad";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 42px;
+    top: -20px;
+    left: -10px;
+    color: var(--blue-regular);
+}
+
+/* Tabs */
+
+.tabs.tabs-bb ul.tab-nav li.ui-tabs-active a {
+    border-bottom: 2px solid var(--blue-regular);
+    top: -2px;
+    height: 44px;
+    line-height: 44px;
+}
+
+.acc_content {
+    position: relative;
+    padding: 0 0 15px 0px;
+}
+
+/* Para refletir */
+
+.feature-box.fbox-effect.reflect-box.curso1 {
+    border: 2px dotted var(--blue-regular);
+    border-radius: 6px;
+    padding: 20px 20px 20px 100px;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 0px var(--blue-light);
+}
+
+.reflect-box.curso1 .fbox-icon {
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 20px;
+    left: 20px;
+}
+
+.fbox-effect:hover .fbox-icon i {
+    background-color: var(--blue-dark);
+    color: #FFF;
+}
+
+@media (max-width: 576px) {
+    .reflect-box.curso1 .fbox-icon {
+        top: -30px;
+        left: calc(50% - 32px);
+    }
+    .feature-box.fbox-effect.reflect-box.curso1 {
+        padding: 60px 20px 20px 20px;
+    }
+}
+
+.reflect-box.curso1 h3 {color: var(--blue-dark);}
+
+.reflect-box.curso1 p {color: var(--text-regular);}
+    
+.feature-box .fbox-icon i, .feature-box .fbox-icon img {
+    border-radius: 50%;
+    background-color: var(--blue-regular);
+}
+
+/* Accordion */
+
+.accordion.accordion-bg .acctitle, .accordion.accordion-bg .acctitlec {
+    background-color: var(--blue-regular);
+    color: #ffffff;
+    line-height: 44px;
+    padding: 0 0 0 36px;
+    margin-bottom: 5px;
+    border-top: 0;
+}
+.accordion .acc_content .acc-quote {
+    background-color: var(--blue-light-extra);
+    display: inline-block;
+}
+
+/* Toggle */
+
+.toggle.toggle-bg .togglet, .toggle.toggle-bg .toggleta {
+    background-color: var(--blue-regular);
+    color: #ffffff;
+    line-height: 44px;
+    padding: 0 0 0 36px;
+    margin-bottom: 5px;
+    border-top: 0;
+}
+.accordion .acc_content .acc-quote {
+    background-color: var(--blue-light-extra);
+    display: inline-block;
+}
+
+/* Tabela de competências */
+
+section .table-competências h4 {
+    background-color: var(--blue-light);
+    padding: 5px 10px;
+    color: #ffffff;
+    margin: 0;
+}
+section .table-competências ul {
+    background-color:var(--blue-light-extra);
+    padding: 20px;
+}
+section .table-competências li {
+    list-style-position: outside;
+    margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+    .accordion.accordion-bg .acc_content {
+        padding: 10px 0 15px 0;
+    }
+}
+
+/* Resumo da aula */
+section .resumo-aula {
+    background-color: #ffffff;
+    color: var(--text-regular);
+    border-top: 3px solid var(--blue-light);
+    border-bottom: 3px solid var(--blue-dark);
+    border-radius: 4px;
+    padding: 30px;
+    text-align: left;
+}
+
+section .resumo-aula h4 {color: var(--blue-dark);}
+section .resumo-aula h5 {color: var(--text-dark);}
+
+/* Button */
+
+.button-simple {background-color: var(--blue-regular);color: #ffffff;}
+.button-simple:hover {background-color: var(--blue-dark);color: #ffffff;}
+.button.button-border {
+    border: 2px solid var(--blue-regular);
+    background-color: transparent;
+    color: var(--blue-regular);
+    line-height: 36px;
+    font-weight: 700;
+    text-shadow: none;
+}
+
+.dark .button.button-border:not(.button-light) {
+    border-color: var(--blue-regular);
+    color: var(--blue-regular);
+}
+.button.button-border.button-fill:before {
+    content: '';
+    position: absolute;
+    background-color:var(--blue-regular);
+}
+
+/* Nav Button : Aulas */
+section .nav-aulas .button.button-reveal i {
+    background-color: var(--blue-light);
+}
+
+body:not(.device-touch) .button {
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+ /* Modal */
+
+ .modal-header {
+    background-color: var(--blue-light-extra);
+    border-bottom: 1px solid var(--blue-light);
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+.modal-title {
+    color: var(--blue-dark);
+}
+.modal-body h4 {color: var(--blue-dark);}
+.modal-body a {color: var(--blue-regular);}
+.modal-body a:hover {color: var(--blue-dark);}
+
+.modal-body li {
+    list-style-position: inside;
+}
+
+/* Item list box */
+
+.list-box {
+    /* border-left: 3px solid var(--blue-regular); */
+    padding: 10px;
+    background-color: var(--text-light-extra);
+    border-radius: 2px;
+    margin: 0 10px 20px;
+    box-shadow: 2px 2px 0px var(--blue-light);
+}
+
+.list-box i {
+    box-shadow: none;
+    margin: 0 0px 0 10px;
+}
+
+.list-box:hover i {
+    background-color: var(--blue-regular);
+    color: #FFF;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    box-shadow: 0 0 0 rgba(0,0,0,0.2);
+    transform: translateX(-15px);
+}
+
+.list-box h5 {
+    margin: 0;
+}
+
+/* Order Item list box */
+
+.list-box.order-list {
+    padding: 5px 10px;
+    margin: 0 10px 10px;
+}
+
+.list-box.order-list .i-rounded, .i-circled, .i-bordered {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    font-size: 20px;
+    color: var(--blue-dark);
+}
+
+.list-box.order-list i span {
+    font-family: 'Lato', sans-serif;
+}
+
+.list-box.order-list:hover i {
+    background-color: var(--blue-regular);
+    color: #FFF;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    box-shadow: 0 0 0 rgba(0,0,0,0.2);
+    transform: translateX(-15px);
+}
+
+/* Flip Card */
+
+.flip-card .flip-card-front:after, .flip-card-back:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+    opacity: 0.6;
+    background: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 6px;
+}
+
+.flip-card .flip-card-back {
+    background-color: var(--text-dark-extra);
+}
+
+.flip-card .flip-card-body {
+    background: transparent;
+}
+
+/* Accordion Color */
+
+.accordion-colors .acctitle i {
+    margin: 0 10px;
+}
+.accordion-colors .acctitle {
+    padding: 10px 20px 10px 30px;
+    background-color: #fff;
+    
+}
+
+.accordion-colors .acc_content {
+    position: relative;
+    padding: 5px 30px 10px;
+    background-color: #fff;
+}
+
+.accordion-colors .acc-item {margin-bottom: 20px;}
+
+.accordion-colors .acc-item:last-child {margin-bottom: 0;}
+
+/* SVG IMG11 */
+
+#img11 {
+    width: 100%;
+    height: auto;
+}
+
+.cls-1{fill:#27a3e0;}
+.cls-2{fill:#e84b92;}
+.cls-3{fill:#f9bb41;}
+.cls-4{opacity:0.9;font-size:28px;fill:#fff;font-family:Lato-Bold, Lato;font-weight:700;}
+.cls-5{letter-spacing:-0.02em;}
+.cls-6{letter-spacing:0em;}
+.cls-7{letter-spacing:-0.02em;}
+.cls-8{letter-spacing:-0.03em;}
+.cls-9{letter-spacing:-0.01em;}
+.cls-10{letter-spacing:-0.03em;}
+
+/* Referencia Box */
+
+.referencia-box {
+    border: 2px solid var(--blue-regular);
+    border-radius: 4px;
+    padding: 20px;
+}
+.referencia-box p:last-child,
+.referencia-box h4:last-child,
+.referencia-box h5:last-child,
+.referencia-box h6:last-child {
+    margin: 0;
+}
+
+/* Blocos de divisões dentro da Aula */
+
+.bloco-title-list h3 {
+    border-left: 3px solid var(--blue-regular);
+    padding-left: 10px;
+}
+.bloco-title-list h3:last-child {margin: 0;}
+
+/* Promo Boxes */
+
+.promo.promo-flat {
+    background-color: var(--blue-regular);
+}
+.promo.promo-dark {
+    border: 0 !important;
+    padding: 30px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+.promo.promo-dark span {
+    margin-top: 8px;
+}
+
+.promo.promo-dark h3 span {
+    color: #ffffff;
+}
+
+.promo.promo-dark h4 {
+    color: #FFF;
+    margin: 0;
+}
+
+/* Feature Box */
+
+.curso1 .feature-box.fbox-center:not(.fbox-bg) h3:after {
+    content: '';
+    display: none;
+}
+
+/* Card */
+.card {
+    border: 3px solid var(--blue-regular);
+    border-radius: 6px;
+}
+.card .card-header {
+    background-color: var(--blue-regular);
+    padding: 20px;
+    border-radius: 0;
+}
+.card .card-header h1,
+.card .card-header h2,
+.card .card-header h3,
+.card .card-header h4,
+.card .card-header h5,
+.card .card-header h6 {
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+.card .card-body {
+    background-color: var(--blue-light-extra);
+    padding: 20px;
+    border-radius: 6px;
+}
+.card .card-footer {
+    background-color: var(--blue-light-extra);
+    padding: 20px;
+    border-radius: 0;
+    border-top: 1px solid var(--blue-regular);
+}
+.card .card-body p,
+.card .card-footer p {
+    color: var(--blue-dark-extra);
+    margin-bottom: 10px;
+}
+.card .card-body p:last-child,
+.card .card-footer p:last-child {
+    margin: 0;
+}
+
+/* Bordered Featured Boxes */
+.feature-box-number .feature-box.fbox-bg.fbox-center {
+    margin-top: 68px;
+    padding: 68px 0 0;
+    background-color: var(--blue-regular);
+    border: 2px solid var(--blue-regular);
+    border-radius: 5px;
+}
+.feature-box-number .feature-box.fbox-border .fbox-icon {
+    border: 2px solid var(--blue-dark-extra);
+    border-radius: 50%;
+}
+.feature-box-number .feature-box.fbox-border .fbox-icon i, .feature-box.fbox-border .fbox-icon img {
+    border: none;
+    background-color: transparent !important;
+    color: var(--text-dark);
+}
+.feature-box-number .fbox-border.fbox-effect:hover .fbox-icon i {
+    color: #FFF;
+    box-shadow: 0 0 0 1px #333;
+}
+.feature-box-number .feature-box .feature-box-header {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid var(--blue-light);
+}
+.feature-box-number .feature-box .feature-box-header h3 {
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+.feature-box-number .feature-box .feature-box-body {
+    background-color: #ffffff;
+    padding: 20px;
+}
+.feature-box-number .feature-box .feature-box-body p {
+    margin: 0 0 10px;
+    text-align: left;
+    color: var(--text-regular);
+}
+.feature-box-number .feature-box hr {
+    background-color: #ffffff;
+    padding: 0 20px;
+    margin: 0;
+}
+.feature-box-number .feature-box .feature-box-footer {
+    background-color: #ffffff;
+    padding: 20px;
+}
+.feature-box-number .feature-box .feature-box-footer p {
+    margin: 0 0 10px;
+    text-align: left;
+    color: var(--text-regular);
+}
+
+/* Carousel Text */
+
+.carousel-text .carousel-item {
+    padding: 20px;
+}
+.carousel-text .carousel-item .item-inner {
+    /* background-color: var(--blue-light-extra);
+    border: 1px solid var(--blue-light); */
+    border-radius: 6px;
+    /* padding: 20px; */
+    min-height: 250px;
+}
+
+.carousel-text .carousel-item h3,
+.carousel-text .carousel-item h4 {
+    color: var(--blue-regular);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    margin: 0 0 10px;
+    text-align: center;
+}
+.carousel-text .carousel-item p {
+    color: var(--blue-dark);
+    text-align: center;
+    margin: 0;
+}
+
+.carousel-text .carousel-indicators li {
+    background-color: var(--blue-regular);
+}
+
+.carousel-text .carousel-indicators {
+    margin-bottom: 10px;
+}
+.carousel-text .carousel-control-prev i,
+.carousel-text .carousel-control-next i {
+    color: var(--blue-dark);
+    font-size: 30px;
+}
+
+.carousel-text .carousel-control-prev,
+.carousel-text .carousel-control-next {
+    margin-bottom: 20px;
+    top: auto;
+}
+
+/* Table Responsive */
+
+.table-column-size {
+    table-layout: fixed
+}
+
+.table th {
+    background-color: var(--blue-light);
+    color: var(--blue-dark-extra);
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+.table-bordered th, .table-bordered td {
+    border: 1px solid var(--blue-light);
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: none;
+}
+
+/* No More Tables */
+@media only screen and (max-width: 800px) {
+	
+	/* Force table to not be like tables anymore */
+	.no-more-tables table, 
+	.no-more-tables thead, 
+	.no-more-tables tbody, 
+	.no-more-tables th, 
+	.no-more-tables td, 
+	.no-more-tables tr { 
+		display: block;
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.no-more-tables thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	.no-more-tables tr { 
+        border: 1px solid var(--blue-light);
+        margin-bottom: 1rem;
+        border-bottom: none;
+        background-color: var(--blue-light-extra);
+    }
+ 
+	.no-more-tables td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid var(--blue-light); 
+		position: relative;
+		padding-left: 50%; 
+		white-space: normal;
+		text-align:left;
+	}
+ 
+	.no-more-tables td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: calc(50% - 12px) ;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+        color: var(--blue-light);
+	}
+ 
+	/* Label the data */
+	.no-more-tables td:before { content: attr(data-title); }
+
+    /* Tables2 */
+    .no-more-tables.tables2 td { 
+		/* Behave  like a "row" */
+		padding-left: 35%; 
+    }
+    .no-more-tables.tables2 td:nth-of-type(1):before { content: "Estilo"; }
+    .no-more-tables.tables2 td:nth-of-type(2):before { content: "O que fazer"; }
+    .no-more-tables.tables2 td:nth-of-type(3):before { content: "O que evitar"; }
+}
+
+/* Imagem aula 10 - bullets */
+
+.float-item {
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: var(--blue-light-extra);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    line-height: 1.5;
+    z-index: 10;
+}
+.float-item:hover {
+    background-color: var(--main-color);
+    color: #ffffff;
+}
+
+.float-item.item1 {
+    top: 22%;
+    left: 29%;
+}
+.float-item.item2 {
+    top: 22%;
+    right: 29%;
+}
+.float-item.item3 {
+    top: 58.5%;
+    left: calc(50% - 15px);
+}
+.float-item.item4 {
+    bottom: -4%;
+    left: 13%;
+}
+.float-item.item5 {
+    bottom: -4%;
+    left: calc(50% - 15px);
+}
+.float-item.item6 {
+    bottom: -4%;
+    right: 13%;
+}

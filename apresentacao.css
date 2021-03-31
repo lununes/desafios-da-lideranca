@@ -117,26 +117,26 @@ section .card-curso .card-body li {
 }
 
 section .card-curso.curso-2 {
-    background: linear-gradient(90deg,var(--text-light) 4%, var(--text-regular) 0%) top/100% 34% no-repeat,linear-gradient(90deg,var(--text-regular) 50%,var(--text-dark) 0%) top/100% 82% no-repeat,linear-gradient(90deg,var(--text-light) 10%,var(--text-regular) 0%) top/100% 100%;
+    background: linear-gradient(90deg,var(--blue-light) 4%, var(--blue-regular) 0%) top/100% 34% no-repeat,linear-gradient(90deg,var(--blue-regular) 50%,var(--blue-dark) 0%) top/100% 82% no-repeat,linear-gradient(90deg,var(--blue-light) 10%,var(--blue-regular) 0%) top/100% 100%;
 }
 section .curso-2 h4 {
-    color: var(--text-light);
+    color: var(--blue-light);
 }
 section .curso-2 h3 {
-    color: var(--text-regular);
+    color: var(--blue-regular);
 }
 section .curso-2 .card-header,
 section .curso-2 .card-footer {
-    background-color: var(--text-light-extra);
-    border-color: var(--text-light);
+    background-color: var(--blue-light-extra);
+    border-color: var(--blue-light);
 }
 section .curso-2 .card-body li::before {
     content: counter(my-awesome-counter) ". ";
-    color: var(--text-dark-extra);
+    color: var(--blue-dark-extra);
     font-weight: bold;
 }
 section .curso-2 .card-footer a {
-      background-color: var(--text-regular);
+      background-color: var(--blue-regular);
 }
 
 /* Curso 3 */
