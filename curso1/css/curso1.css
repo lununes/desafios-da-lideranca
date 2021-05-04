@@ -9,6 +9,20 @@ a {
 
 a:hover {color: var(--green-dark);}
 
+/* Mega Menu */
+
+#primary-menu .mega-menu .curso1 .aula-nome span {
+    color: var(--green-regular);
+}
+
+/* #primary-menu ul ul.curso1 li:hover > a {
+    color: var(--purple-regular);
+} */
+
+#primary-menu ul li .mega-menu-content.style-2 ul.curso1 li > a:hover .aula-nome span {
+    background-color: var(--green-regular);
+}
+
 /* Heading */
 
 .heading-block h1, .heading-block h2, .heading-block h3, .heading-block h4, .emphasis-title h1, .emphasis-title h2 {

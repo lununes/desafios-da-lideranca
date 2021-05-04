@@ -257,7 +257,7 @@ body.no-superfish #primary-menu li:hover > .mega-menu-content { display: block; 
 	background-color: #FFF;
 	box-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.05);
 	border: 1px solid #EEE;
-	border-top: 2px solid #1ABC9C;
+	border-top: 2px solid var(--main-color);
 	height: auto;
 	z-index: 199;
 	top: 100%;
@@ -313,7 +313,7 @@ body.no-superfish #primary-menu li:hover > .mega-menu-content { display: block; 
 #primary-menu ul ul li:hover > a {
 	background-color: #F9F9F9;
 	padding-left: 18px;
-	color: #1ABC9C;
+	color: var(--text-dark);
 }
 
 #primary-menu ul ul > li.sub-menu > a,
@@ -1918,10 +1918,19 @@ header .mega-menu-title .subtitle-curso {
 
 #primary-menu .mega-menu .aula-nome span {
     display: inline-block;
-    color: var(--green-regular);
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 1;
+}
+
+#primary-menu .mega-menu .curso1 .aula-nome span {
+	color: var(--green-regular);
+}
+#primary-menu .mega-menu .curso2 .aula-nome span {
+	color: var(--blue-regular);
+}
+#primary-menu .mega-menu .curso3 .aula-nome span {
+	color: var(--purple-regular);
 }
 
 #primary-menu ul li .mega-menu-content.style-2 ul li > a:hover {
@@ -1932,7 +1941,16 @@ header .mega-menu-title .subtitle-curso {
     padding: 5px;
     line-height: 1;
     color: #ffffff;
-    background-color: var(--green-regular);
     border-radius: 2px;
     transition: all .2s ease-in-out;
+}
+
+#primary-menu ul li .mega-menu-content.style-2 ul.curso1 li > a:hover .aula-nome span {
+	background-color: var(--green-regular);
+}
+#primary-menu ul li .mega-menu-content.style-2 ul.curso2 li > a:hover .aula-nome span {
+	background-color: var(--blue-regular);
+}
+#primary-menu ul li .mega-menu-content.style-2 ul.curso3 li > a:hover .aula-nome span {
+	background-color: var(--purple-regular);
 }
