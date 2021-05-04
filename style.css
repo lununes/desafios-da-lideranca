@@ -7352,7 +7352,7 @@ body:not(.device-touch) .button.button-full strong {
 .promo.promo-dark > .container > h3 span {
 	padding: 2px 8px;
 	border-radius: 3px;
-	background-color: rgba(0,0,0,0.15);
+	background-color: rgba(0,0,0,0.30);
 	color: #FFF;
 	font-weight: 400;
 }
@@ -7923,7 +7923,7 @@ body:not(.device-touch) .button.button-full strong {
 /* Animated Icon Hovers
 -----------------------------------------------------------------*/
 
-.fbox-effect .fbox-icon i { z-index: 1; }
+/* .fbox-effect .fbox-icon i { z-index: 1; }
 
 .fbox-effect .fbox-icon i:after {
 	pointer-events: none;
@@ -7978,7 +7978,7 @@ body:not(.device-touch) .button.button-full strong {
 	-ms-transform: scale(1);
 	transform: scale(1);
 	opacity: 1;
-}
+} */
 
 /* Icon Effects - Bordered
 -----------------------------------------------------------------*/
@@ -8005,11 +8005,11 @@ body:not(.device-touch) .button.button-full strong {
 
 .fbox-border.fbox-rounded.fbox-effect .fbox-icon i:after { border-radius: 3px; }
 
-.fbox-border.fbox-effect .fbox-icon i:hover,
+/* .fbox-border.fbox-effect .fbox-icon i:hover,
 .fbox-border.fbox-effect:hover .fbox-icon i {
 	color: #FFF;
 	box-shadow: 0 0 0 1px #333;
-}
+} */
 
 .fbox-border.fbox-effect .fbox-icon i:after {
 	-webkit-transform: scale(1.3);
@@ -8280,7 +8280,7 @@ body:not(.device-touch) .button.button-full strong {
 	font-size: 28px;
 	color: #FFF;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-	cursor: pointer;
+	/* cursor: pointer; */
 	font-style: normal;
 }
 
@@ -8339,7 +8339,7 @@ body:not(.device-touch) .social-icon {
 }
 
 
-.i-rounded:hover,
+/* .i-rounded:hover,
 .i-circled:hover {
 	background-color: var(--main-color);
 	color: #FFF;
@@ -8351,7 +8351,7 @@ body:not(.device-touch) .social-icon {
 	background-color: #444 !important;
 	color: #FFF;
 	border-color: #444;
-}
+} */
 
 
 /* Icon Size - Small
