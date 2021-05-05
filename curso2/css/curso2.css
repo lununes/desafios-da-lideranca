@@ -449,6 +449,7 @@ body:not(.device-touch) .button {
 
 .promo.promo-dark span {
     margin-top: 8px;
+    font-weight: 500;
 }
 
 .promo.promo-dark h3 span {
@@ -608,6 +609,38 @@ body:not(.device-touch) .button {
     margin-bottom: 20px;
     top: auto;
 }
+
+/* Carroussel Boxes */
+
+.carousel .testimonial {
+    background-color: var(--text-light-extra);
+    border:2px solid var(--blue-dark);
+}
+.carousel .testi-content p::before, .testi-content.carousel p::after {content:"";}
+.carousel .testi-content p {
+    font-family:'Lato', sans-serif;
+    font-style: normal;
+}
+.carousel .testi-content i {
+    color: var(--blue-regular);
+}
+
+.owl-carousel.carousel .owl-nav [class*="owl-"] {
+    background-color: var(--blue-regular) !important;
+    opacity: 1;
+    color: #fff;
+}
+.owl-carousel.carousel  .owl-nav [class*="owl-"]:hover {
+    background-color: var(--blue-dark) !important;
+}
+
+.owl-carousel.carousel .owl-dots .owl-dot {
+    background-color: var(--blue-regular) !important;
+}
+
+.owl-carousel .owl-nav .owl-next {right:-18px;}
+.owl-carousel .owl-nav .owl-prev {left:-18px;}
+                               
 
 /* Table Responsive */
 
